@@ -12,7 +12,7 @@ export function Hero() {
       className="scanlines relative flex min-h-screen w-full items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 grid-bg opacity-70" />
-      <div className="absolute inset-0 opacity-70 md:opacity-100">
+      <div className="absolute inset-0">
         <HeroCanvas />
       </div>
       <Particles />
