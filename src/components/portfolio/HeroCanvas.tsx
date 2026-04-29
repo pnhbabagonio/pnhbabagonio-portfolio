@@ -1,7 +1,5 @@
-import { Suspense, lazy } from "react";
-
-// Lazy-load Three.js scene to keep initial bundle light
-const Scene = lazy(() => import("./HeroScene"));
+import { Suspense } from "react";
+import HeroScene from "./HeroScene";
 
 export function HeroCanvas() {
   return (
@@ -11,7 +9,7 @@ export function HeroCanvas() {
       aria-hidden
     >
       <Suspense fallback={null}>
-        <Scene />
+        <HeroScene />
       </Suspense>
     </div>
   );
